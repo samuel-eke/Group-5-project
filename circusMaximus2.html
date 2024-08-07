@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" class="overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./bootstrap-icons-1.11.3/font/bootstrap-icons.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    <title>AMN - Event</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top border-bottom" id="navbar">
+      <div class="container p-3">
+        <a class="navbar-brand fs-4" href="index.html">AM<span class="text-danger">NATION</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#reviews">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="booking page.html">Book Now</a></li>
+          </ul>
+          <form class="d-flex me-5" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-secondary" type="submit">Search</button>
+          </form>
+          <i class="bi bi-sun ms-5 my-5 my-lg-0 position-absolute" id="darkMode"></i>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid p-0 hero">
+      <img src="img/circus maximus.png" alt="" class="w-100 object-fit-cover">
+    </div>
+
+    <div class="container">
+      <div class="row py-3">
+        <div class="col-lg-12">
+          <h3>CIRCUS MAXIMUS 2024 (Main Event)</h3>
+          <p class="text-secondary">
+            <small><i class="bi bi-geo-alt-fill mx-2"></i>Travis Scott x Tenpo.</small><small><i class="bi bi-calendar-date-fill mx-2"></i>Starts on Fri, Sep 07, 2024 10:00PM. <i class="bi bi-clock mx-2"></i ></small>
+            <div id="date" class="d-none">September 7, 2024 22:00:00</div>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5 fw-bold">
+      <div class="row gx-5 position-relative">
+        <div class="col-lg-8">
+          <img src="img/utopia.jpg" class="img-fluid sticky-top rounded-3" alt="AfroNation Event Image"/>
+        </div>
+        <div class="col-lg-4 rounded-3 bk">
+          <h5 class="border-bottom py-3" id="timer">Event Details</h5>
+          <div class="row mt-4">
+            <div class="col-3 text-center">
+              <span class="d-block fs-3" id="days">0</span>
+              <span><small>DAYS</small></span>
+            </div>
+            <div class="col-3 text-center">
+              <span class="d-block fs-3" id="hours">0</span>
+              <span><small>HOURS</small></span>
+            </div>
+            <div class="col-3 text-center">
+              <span class="d-block fs-3" id="minutes">0</span>
+              <span><small>MINUTES</small></span>
+            </div>
+            <div class="col-3 text-center">
+              <span class="d-block fs-3" id="seconds">0</span>
+              <span><small>SECONDS</small></span>
+            </div>
+            <div class="row my-4">
+              <div class="col-2 d-flex align-items-center">
+                <i class="bi bi-person"></i>
+              </div>
+              <div class="col-10">
+                <p class="text-secondary"><small>Organized by: </small></p>
+                <p>Travis Scott</p>
+              </div>
+            </div>
+            <div class="row my-4">
+              <div class="col-2 d-flex align-items-center">
+                <i class="bi bi-calendar-date-fill"></i>
+              </div>
+              <div class="col-10">
+                <p class="text-secondary"><small>Date and Time: </small></p>
+                <p>Fri, Sep 07, 2024 10:00 PM</p>
+              </div>
+            </div>
+            <div class="row my-4">
+              <div class="col-2 d-flex align-items-center">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div class="col-10">
+                <p class="text-secondary"><small>Location: </small></p>
+                <p>ESTADIO BICENTENARIO LA FLORIDA SANTIAGO, CHILE </p>
+              </div>
+            </div>
+          </div>
+          <h5 class="border-bottom py-3">Select Ticket</h5>
+          <div class="row">
+            <div class="col-12 d-flex justify-content-between my-3">
+              <div class="text-start">
+                <h3>Regular</h3>
+                <p><span>$300.00</span></p>
+              </div>
+              <div class="text-end d-flex align-items-center">
+                <span class="mx-2 rounded-circle px-2 py-1 border">-</span>
+                <span class="mx-2">0</span>
+                <span class="mx-2 rounded-circle px-2 py-1 border">+</span>
+              </div>
+            </div>
+            <div class="col-12 d-flex justify-content-between my-3">
+              <div class="text-start">
+                <h3>VIP</h3>
+                <p><span>$1,500.00</span></p>
+                <span class="text-secondary"><small>VIP</small></span>
+              </div>
+              <div class="text-end d-flex align-items-center">
+                <span class="mx-2 rounded-circle px-2 py-1 border">-</span>
+                <span class="mx-2">0</span>
+                <span class="mx-2 rounded-circle px-2 py-1 border">+</span>
+              </div>
+            </div>
+            <div class="col-12 d-flex justify-content-between my-3">
+              <div class="text-start">
+                <h3>Exclusive Lounge</h3>
+                <p><span>$10,000.00</span></p>
+              </div>
+              <div class="text-end d-flex align-items-center">
+                <span class="mx-2 rounded-circle px-2 py-1 border">-</span>
+                <span class="mx-2">0</span>
+                <span class="mx-2 rounded-circle px-2 py-1 border">+</span>
+              </div>
+            </div>
+            <div class="col-12 d-flex justify-content-between my-3">
+              <div class="text-start">
+                <h3>Elite VIP Chambers</h3>
+                <p><span>$100,000.00</span></p>
+              </div>
+              <div class="text-end d-flex align-items-center">
+                <span class="mx-2 rounded-circle px-2 py-1 border">-</span>
+                <span class="mx-2">0</span>
+                <span class="mx-2 rounded-circle px-2 py-1 border">+</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 py-3">
+            <span class="text-secondary"><small>0x Item(s)</small></span>
+            <p><span>₦0.00</span></p>
+          </div>
+          <div class="col-12">
+            <button type="button" class="btn btn-secondary w-100">Book now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container-1 py-5" id="headliners">
+      <div class="my-5">
+        <h3 class="fw-bold fs-2 text-lead">Featured Artist</h3>
+      </div>
+      <div class="row g-4 d-flex justify-content-center">
+        <div class="col-lg-6 col-sm-6">
+          <div class="card border-0 artist-card overflow-hidden rounded-3">
+            <img src="./img/travis.png" alt="Artist 2" class="rounded-3 img-fluid object-fit-cover"/>
+            <div class="card-footer p-4 text-center rounded-3 border-0">
+              <h5 class="fw-bold fs-5">TRAVIS SCOTT</h5>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+
+    <div class="container-lg my-5 container-1 container-fluid" id="case-stud">
+      <div class="my-5 d-flex justify-content-between align-items-center">
+        <h3 class="fw-bold fs-2 text-lead">Other Events</h3>
+        <a class="nav-link" href="event page.html">view all ></a>
+      </div>
+      <div class="row case-row my-4 gy-5 gy-lg-0">
+        <div class="col-lg-6 position-relative cases-1">
+          <div class="cases position-relative rounded-4 overflow-hidden w-100 h-100">
+            <img src="./img/SHOTLIST_JAKEMULKA_JMULKA_SUNDAY__6390.jpg" class="d-block w-100 img-fluid h-100 object-fit-cover" alt="..."/>
+            <div class="case-card w-100 h-100 position-absolute d-flex flex-column justify-content-end p-4 rounded-3 text-center top-0 start-0">
+              <h3 class="text-light display-5 fs-2 fw-bold">Afro Nation</h3>
+              <a href="/afroNation.html" class="btn btn-outline-light w-50">Buy Ticket(s)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5 container-1">
+      <div class="row">
+        <div class="col-md-6 mx-auto text-center">
+          <h3>Subscribe to Our Newsletter</h3>
+          <p>Stay updated with the latest news and events.</p>
+          <form id="newsletter-form">
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Enter your email" aria-label="Enter your email" required/>
+              <button class="btn btn-secondary" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-5 p-0">
+      <footer class="py-5 mt-4 p-0 bg-dark text-light">
+        <div class="container">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link text-light">Home</a></li>
+            <li class="nav-item"><a href="index.html#about" class="nav-link text-light">About</a></li>
+            <li class="nav-item"><a href="index.html#case-stud" class="nav-link text-light">Events</a></li>
+            <li class="nav-item"><a href="index.html#reviews" class="nav-link text-light">Reviews</a></li>
+            <li class="nav-item"><a href="booking page.html" class="nav-link text-light">Book Now</a></li>
+            <li class="nav-item"><a href="index.html#contact" class="nav-link text-light">Contact Us</a></li>
+          </ul>
+          <div class="d-flex justify-content-center mb-3">
+            <a href="#" class="text-light me-3 fs-4"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-light me-3 fs-4"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-light me-3 fs-4"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-light me-3 fs-4"><i class="bi bi-linkedin"></i></a>
+          </div>
+          <p class="text-center mb-0"> &copy; 2024 AMNation, Inc. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
