@@ -1,5 +1,5 @@
-let html = document.getElementsByTagName("html")[0];
 let modeChanger = document.getElementById("darkMode");
+let html = document.getElementsByTagName("html")[0];
 let r = document.querySelector(":root");
 modeChanger.addEventListener("click", () => {
   if (modeChanger.classList.contains("bi-sun")) {
@@ -18,24 +18,15 @@ modeChanger.addEventListener("click", () => {
     html.setAttribute("data-bs-theme", "light");
   }
 });
-const data = document.getElementById('date')
-date = data.innerHTML;
+const date = document.getElementById('date').innerHTML;
 const eventDate = new Date(date).getTime();
 const countdown = setInterval(() => {
   const now = new Date().getTime();
   const distance = eventDate - now;
-  document.getElementById("days").innerText = Math.floor(
-    distance / (1000 * 60 * 60 * 24)
-  );
-  document.getElementById("hours").innerText = Math.floor(
-    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-  );
-  document.getElementById("minutes").innerText = Math.floor(
-    (distance % (1000 * 60 * 60)) / (1000 * 60)
-  );
-  document.getElementById("seconds").innerText = Math.floor(
-    (distance % (1000 * 60)) / 1000
-  );
+  document.getElementById("days").innerText = Math.floor( distance / (1000 * 60 * 60 * 24) );
+  document.getElementById("hours").innerText = Math.floor( (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60) );
+  document.getElementById("minutes").innerText = Math.floor( (distance % (1000 * 60 * 60)) / (1000 * 60) );
+  document.getElementById("seconds").innerText = Math.floor( (distance % (1000 * 60)) / 1000 );
   if (distance < 0) {
     clearInterval(countdown);
     document.getElementById("timer").innerHTML = "Event Started";

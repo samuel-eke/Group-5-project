@@ -26,13 +26,13 @@ body{background-color: rgba(var(--black), 0.5); transition: all 200ms ease;}
 #headliners .text-lead , #case-stud .text-lead{text-shadow: 0 0 5px rgba(var(--white), 0.5);}
 #headliners .artist-card {
   transition: transform 300ms ease, box-shadow 300ms ease;
-  background: transparent;
   cursor: pointer;
   -webkit-backface-visibility: hidden;
   -webkit-transform: perspective(1000px);
   transform: perspective(1000px);
   backface-visibility: hidden;
 }
+.artist-card, #reviews .card {   background: transparent !important;}
 #headliners .artist-card img {
   height: 15rem;
   transition: transform 300ms ease;
