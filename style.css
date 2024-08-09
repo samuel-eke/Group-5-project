@@ -13,15 +13,14 @@ body{background-color: rgba(var(--black), 0.5); transition: all 200ms ease;}
 .cases-1 {max-height: 280px !important;}
 .cases img {transition: transform 300ms ease;}
 .cases:hover{box-shadow: 2px 3px 9px rgba(var(--white), 0.6);}
-.cases:hover img {transform: scale(1.1) rotate(2deg)}
+.cases:hover img {transform: scale(1.15)}
 .carousel-item img {height: 87vh;}
 .case-card {
   background-color: rgba(0, 0, 0, 0.5);
-  transition: background-color 250ms ease, transform 250ms ease;
+  transition: background-color 250ms ease;
 }
 .cases:hover .case-card{
   background-color: rgba(0, 0, 0, 0);
-  transform: translateY(-10px);
 }
 #headliners .text-lead , #case-stud .text-lead{text-shadow: 0 0 5px rgba(var(--white), 0.5);}
 #headliners .artist-card {
