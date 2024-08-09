@@ -4,8 +4,8 @@ body{background-color: rgba(var(--black), 0.5); transition: all 200ms ease;}
 .hero{margin-top: 6rem !important;}
 .navbar{
   background-color: rgb(var(--black), 0.7);
-  backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
 }
 #darkMode{top: 40%;right: 5%;}
 @media screen and (max-width :991px) {#darkMode{top: 72.5%;}body{overflow-x: hidden;}}
