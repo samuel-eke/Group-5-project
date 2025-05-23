@@ -4,7 +4,7 @@ let r = document.querySelector(":root");
 modeChanger.addEventListener("click", () => {
   if (modeChanger.classList.contains("bi-sun")) {
     modeChanger.classList.remove("bi-sun");
-    modeChanger.classList.add("bi-moon");
+    modeChanger.classList.add("bi-moon"); 
     r.style.setProperty("--white", "255, 255, 255");
     r.style.setProperty("--black", "0, 0, 0");
     html.removeAttribute("data-bs-theme", "light");
